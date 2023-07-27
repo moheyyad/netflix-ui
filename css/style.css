@@ -1,0 +1,335 @@
+:root{
+  --a: #9a9794;
+  --b: #e30914;
+}
+body{
+  background-image: url("../imgs/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Bebas Neue', sans-serif;
+}
+::selection{
+  background-color: var(--b);
+  color: #fff;
+}
+.netflix{
+  margin: 20px;
+  display: flex;
+}
+.netflix img{
+  width: 120px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.netflix img:hover{
+  scale: 1.05;
+}
+.netflix h3{
+  color: #fff;
+  text-transform: uppercase;
+  align-self: center;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 11px;
+}
+.vl1{
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+  margin: 17px 3px;
+}
+.menu{
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu ul li{
+  list-style: none;
+  color: #fff;
+  letter-spacing: 4px;
+  padding-left: 20px;
+  float: left;
+  cursor: pointer;
+  font-size: 22px;
+  transition-duration: .3s;
+}
+.menu ul li:hover{
+  transform: translateY(4px);
+  color: var(--b);
+}
+.hr{
+  width: 440px;
+  height: 2px;
+  background-color: var(--a);
+  margin: 60px -20px 60px 30px;
+}
+.select{
+  width: 52px;
+  height: 8px;
+  background-color: var(--a);
+  position: relative;
+  top: -65px;
+  left: 59px;
+}
+.profile i:first-child,
+.profile i:nth-child(2){
+  position: absolute;
+  top: 60px;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.profile i:first-child{
+  right: 131px;
+}
+.profile i:first-child:hover{
+  color: var(--b);
+  scale: 1.3;
+}
+.profile i:nth-child(2){
+  right: 100px;
+}
+.profile i:nth-child(2):hover{
+  color: var(--b);
+  scale: 1.4;
+}
+.profile img{
+  height: 60px;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.profile img:hover{
+  scale: 1.1;
+}
+.p1{
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 110px;
+  left: 35px;
+  word-spacing: 20px;
+  letter-spacing: 4px;
+}
+.vl2{
+  position: absolute;
+  top: 135px;
+  left: 116px;
+  width: 117px;
+  height: 27px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-bottom: none;
+}
+.p2{
+  color: #fff;
+  font-size: 62px;
+  position: absolute;
+  top: 110px;
+  left: 35px;
+  word-spacing: -5px;
+  letter-spacing: 8px;
+}
+.year{
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 250px;
+  left: 35px;
+  letter-spacing: 5px;
+}
+.p3{
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 228px;
+  left: 110px;
+  letter-spacing: 4px;
+  word-spacing: 170px;
+}
+.p4{
+  color: var(--a);
+  font-size: 22px;
+  position: absolute;
+  top: 228px;
+  left: 230px;
+  letter-spacing: 4px;
+  word-spacing: 115px;
+}
+.vl3{
+  position: absolute;
+  top: 251px;
+  left: 98px;
+  width: 278px;
+  height: 24px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-bottom: none;
+}
+.p5{
+  color: var(--a);
+  font-size: 17px;
+  position: absolute;
+  top: 270px;
+  left: 35px;
+  width: 540px;
+}
+.buts a{
+  text-decoration: none;
+  color: #fff;
+  transition-duration: .3s;
+  position: absolute;
+  top: 360px;
+  left: 50px;
+}
+.now{
+  background-color: var(--b);
+  border: 2px solid var(--b);
+  border-radius: 4px;
+  padding: 6px 8px;
+  letter-spacing: 3px;
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+}
+.now::before{
+  background: #000;
+  content: "";
+  width: 0px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition-duration: .6s;
+}
+.now:hover::before{
+  width: 200px;
+}
+.now:hover{
+  color: var(--b);
+  scale: 1.1;
+}
+.all{
+  margin-left: 160px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 6px 20px;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+.all::before{
+  background: #fff;
+  content: "";
+  width: 0px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition-duration: .6s;
+}
+.all:hover::before{
+  width: 200px;
+}
+.all:hover{
+  color: #000;
+  scale: 1.1;
+
+}
+.p6{
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 395px;
+  left: 50px;
+  letter-spacing: 4px;
+}
+.arows{
+  position: absolute;
+  top: 420px;
+  left: 460px;
+}
+.arows i {
+  color: #fff;
+  padding: 5px;
+  font-size: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+.arows i:hover{
+  background-color: #fff;
+  color: var(--b);
+  scale: 1.3;
+}
+.plus18{
+  position: absolute;
+  top: 550px;
+  right: 0;
+  width: 60px;
+  height: 35px;
+  color: #fff;
+  background-color: #ffffff40;
+  border-left: 35px solid #850108;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.imgs{
+  position: absolute;
+  top: 450px;
+  left: -110px;
+  height: 100px;
+}
+.imgs li{
+  float: left;
+  list-style: none;
+}
+.imgs img{
+  height: 120px;
+  margin: -10px;
+  transition-duration: .3s;
+  border: 2px solid transparent
+}
+.imgs img:hover{
+  scale: 1.08;
+  border-color: var(--b);
+}
+.imgs li::after{
+  color: #fff;
+  position: relative;
+  bottom: -40px;
+  left: -50%;
+  letter-spacing: 2px;
+}
+.i0::after{
+  content: "THE LAST OF US"
+}
+.i0{
+  margin-right: -35px;
+}
+.i1::after{
+  content: "MR ROBOT"
+}
+.i1{
+  margin: 0 -10px;
+}
+.i2::after{
+  content: "LUCIFER"
+}
+.i3::after{
+  content: "VIKINGS"
+}
+.i4::after{
+  content: "GAME OF THRONES"
+}
